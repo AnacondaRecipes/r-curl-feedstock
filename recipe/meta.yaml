@@ -46,10 +46,12 @@ requirements:
 
   host:
     - r-base
+    - curl                       # [not win]
 
   run:
     - r-base
     - {{native}}gcc-libs         # [win]
+    - curl
 
 test:
   commands:
