@@ -41,10 +41,14 @@ requirements:
 
   host:
     - r-base
+    - {{native}}curl             # [win]
+    - {{native}}libcurl          # [not win]
 
   run:
     - r-base
     - {{native}}gcc-libs         # [win]
+    - {{native}}curl             # [win]
+    - {{native}}libcurl          # [not win]
 
 test:
   commands:
